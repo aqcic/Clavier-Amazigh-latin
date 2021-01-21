@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clavier Amazigh Latin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="keyboard.css">
+    <link rel="stylesheet" href="" id="toggleMode">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="date">kabylie le <p id="time"></p></div>
+        <div class="pfLink"><a target="blank" href="https://github.com/aqcic/">Clavier Tamaziɣt (Tamɛemrit)</a></div>
+        <div class="copy" alt="copie le texte" data-target="#myTxt">
+            <button><img src="./assets/copy.svg" alt="backspace"></button>
+        </div>
+        <div class="reset">
+            <button><img src="./assets/reset.svg" alt="backspace"></button>
+        </div>
+    </header>
+
+    <!-- chat -->
+    <section class="main">
+        <div class="chat">
+        </div>
+        <div id="myMess" >
+            <p id="myTxt" ></p>
+        </div>
+    </section>
+
+    <!-- keyboard -->
+    <section class="downP">
+
+        <div class="keyboard">
+
+            <!-- first row -->
+            <div class="row first">
+                <div class="key 1 & spec"><p>1</p></div>
+                <div class="key 2 é spec"><p>2</p></div>
+                <div class="key 3 # spec"><p>3</p></div>
+                <div class="key 4 ' spec"><p>4</p></div>
+                <div class="key 5 ( spec"><p>5</p></div>
+                <div class="key 6 - spec"><p>6</p></div>
+                <div class="key 7 è spec"><p>7</p></div>
+                <div class="key 8 _ spec"><p>8</p></div>
+                <div class="key 9 ç spec"><p>9</p></div>
+                <div class="key 0 à spec"><p>0</p></div>
+                <div class="key ° ) spec"><p>°</p></div>
+                <div class="key = + spec"><p>=</p></div>
+                <div class="bigKey del"><img src="./assets/backspace.svg" alt="Backspace"></div>
+            </div>
+
+            <div class="row second">
+                <div class="key a A"><p>a</p></div>
+                <div class="key z Z"><p>z</p></div>
+                <div class="key ẓ Ẓ"><p>ẓ</p></div>
+                <div class="key e E"><p>e</p></div>
+                <div class="key r R"><p>r</p></div>
+                <div class="key ṛ Ṛ"><p>ṛ</p></div>
+                <div class="key t T"><p>t</p></div>
+                <div class="key ṭ Ṭ"><p>ṭ</p></div>
+                <div class="key y Y"><p>y</p></div>
+                <div class="key u U"><p>u</p></div>
+                <div class="key i I"><p>i</p></div>
+                <div class="key ɛ Ɛ"><p>ɛ</p></div>
+                <div class="key ^ ¨ spec"><p>^</p></div>
+                <div class="key $ £ spec"><p>$</p></div>
+            </div>
+
+            <div class="row third">
+                <div class="bigKey caps"><img src="./assets/caps.svg" alt="Capslock"><div class="led capsLed"></div></div>
+                <div class="key q Q"><p>q</p></div>
+                <div class="key s S"><p>s</p></div>
+                <div class="key ṣ Ṣ"><p>ṣ</p></div>
+                <div class="key d D"><p>d</p></div>
+                <div class="key ḍ Ḍ"><p>ḍ</p></div>
+                <div class="key f F"><p>f</p></div>
+                <div class="key g G"><p>g</p></div>
+                <div class="key ǧ Ǧ"><p>ǧ</p></div>
+                <div class="key h H"><p>h</p></div>
+                <div class="key ḥ Ḥ"><p>ḥ</p></div>
+                <div class="key j J"><p>j</p></div>
+                <div class="key k K"><p>k</p></div>
+                <div class="key l L"><p>l</p></div>
+                <div class="key m M"><p>m</p></div>
+                <div class="key ù % spec"><p>ù</p></div>
+                <div class="key * µ spec"><p>*</p></div>
+                <div class="bigKey etr"><img src="./assets/enter.svg" alt="Enter"></div>
+            </div>
+
+            <div class="row fourth">
+                <div class="bigKey shift"><img src="./assets/shift.svg" alt="Shift"><div class="led shiftLed"></div></div>
+                <div class="key w W"><p>w</p></div>
+                <div class="key x X"><p>x</p></div>
+                <div class="key c C"><p>c</p></div>
+                <div class="key č Č"><p>č</p></div>
+                <div class="key ɣ Γ"><p>ɣ</p></div>
+                <div class="key b B"><p>b</p></div>
+                <div class="key n N"><p>n</p></div>
+                <div class="key , ? spec"><p>,</p></div>
+                <div class="key ; . spec"><p>;</p></div>
+                <div class="key : / spec"><p>:</p></div>
+                <div class="key ! § spec"><p>!</p></div>
+                <!-- <div class="bigKey emojis">&#128540;</div> -->
+            </div>
+
+            <div class="row fifth">
+                <div class="bigKey toggleButton"><img src="./assets/moon.svg" alt="Night/Light mode"></div>
+                <div class="space"><img src="./assets/space.svg" alt="Spacebar"></div>
+                <div type="button" class="bigKey send"><img src="./assets/send.svg" alt="Send"></div>
+            </div>
+
+        </div>
+
+    </section>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.keyboard, header{
+    background-color:#e9dfdf;
+}
+header, a{
+    color: ##6ab04c;
+}
+.chat div, #myMess{
+    border: 2px solid #ff2e63;
+}
+.key, .bigKey, .space{
+    background-color: white;
+    color: black;
+}
+.bigKey img, .space img{
+    filter: invert(35%) sepia(66%) saturate(4699%) hue-rotate(327deg) brightness(100%) contrast(104%);
+}
+.key:hover, .bigKey:hover, .space:hover{
+    background-color: rgb(221, 221, 221);
+}
+.toggleButton, .toggleButton:hover{
+    background-color: rgb(39, 38, 38);
+    color: rgb(255, 255, 255);
+}
+.toggleButton img, .send img, .reset img, .copy img{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(8deg) brightness(105%) contrast(107%);
+}
+.copy button,.reset button, .send, .send:hover{
+    background-color: #ff2e63;
+}
+::-webkit-scrollbar-thumb{
+    background: #ff2e63; 
+}
