@@ -9,7 +9,7 @@
 button:focus, span:focus{
     outline: none;
 }
-body, board{
+body, .keyboard{
     transition: .5s ease;
 }
 
@@ -122,11 +122,11 @@ header{
 }
 
 /* key */
-
 .key{
     width: 4em;
     text-align: center;
 }
+
 /* bigKey */
 .bigKey{
     width: 7em;
